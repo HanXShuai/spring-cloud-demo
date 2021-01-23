@@ -1,7 +1,7 @@
 package com.hans.cloud.order.controller;
 
-import com.hans.cloud.order.entities.CommonResult;
-import com.hans.cloud.order.entities.Payment;
+import coom.hans.cloud.common.entities.CommonResult;
+import coom.hans.cloud.common.entities.Payment;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;

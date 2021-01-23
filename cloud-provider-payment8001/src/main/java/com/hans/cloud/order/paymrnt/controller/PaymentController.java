@@ -1,8 +1,8 @@
 package com.hans.cloud.order.paymrnt.controller;
 
-import com.hans.cloud.order.paymrnt.entities.CommonResult;
-import com.hans.cloud.order.paymrnt.entities.Payment;
 import com.hans.cloud.order.paymrnt.service.IPaymentService;
+import coom.hans.cloud.common.entities.CommonResult;
+import coom.hans.cloud.common.entities.Payment;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

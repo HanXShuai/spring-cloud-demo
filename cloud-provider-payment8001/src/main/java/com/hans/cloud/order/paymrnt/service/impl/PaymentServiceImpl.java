@@ -2,7 +2,7 @@ package com.hans.cloud.order.paymrnt.service.impl;
 
 import com.hans.cloud.order.paymrnt.dao.IPaymenttDao;
 import com.hans.cloud.order.paymrnt.service.IPaymentService;
-import com.hans.cloud.order.paymrnt.entities.Payment;
+import coom.hans.cloud.common.entities.Payment;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

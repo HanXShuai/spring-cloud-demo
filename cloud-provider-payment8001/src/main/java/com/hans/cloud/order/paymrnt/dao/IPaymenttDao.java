@@ -1,6 +1,6 @@
 package com.hans.cloud.order.paymrnt.dao;
 
-import com.hans.cloud.order.paymrnt.entities.Payment;
+import coom.hans.cloud.common.entities.Payment;
 import org.apache.ibatis.annotations.Mapper;
 
 /**

@@ -1,6 +1,7 @@
 package com.hans.cloud.order.paymrnt.service;
 
-import com.hans.cloud.order.paymrnt.entities.Payment;
+
+import coom.hans.cloud.common.entities.Payment;
 
 /**
  * @Author: hans
