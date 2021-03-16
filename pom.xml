@@ -102,7 +102,7 @@
                     <fork>true</fork>
                     <addResources>true</addResources>
                 </configuration>
-                <version>2.2.2.RELEASE</version>
+                <version>2.4.3</version>
             </plugin>
         </plugins>
     </build>

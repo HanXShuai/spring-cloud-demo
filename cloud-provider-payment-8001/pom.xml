@@ -70,7 +70,7 @@
         </dependency>
         <dependency>
             <groupId>com.hans.cloud</groupId>
-            <artifactId>cloud-api-commons</artifactId>
+            <artifactId>cloud-api-common</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
