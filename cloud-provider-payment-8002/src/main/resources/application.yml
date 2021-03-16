@@ -1,0 +1,23 @@
+server:
+  port: 8002
+
+spring:
+  application:
+    name: provider-payment
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://127.0.0.1:3306/hans_spring_cloud_demo?useUnicode=true&characterEncoding=utf8&useSSL=false
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:7001/eureka/
+
+mybatis:
+  mapper-locations: classpath:/mapper/mapper-*.xml
+  type-aliases-package: com.hans.cloud.paymrnt.entities

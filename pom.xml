@@ -7,10 +7,11 @@
     <artifactId>spring-cloud-demo</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>cloud-consummer-order80</module>
-        <module>cloud-provider-payment8001</module>
-        <module>cloud-api-commons</module>
-        <module>cloud-eureka-server7001</module>
+        <module>cloud-api-common</module>
+        <module>cloud-consummer-order-80</module>
+        <module>cloud-eureka-server-7001</module>
+        <module>cloud-provider-payment-8001</module>
+        <module>cloud-provider-payment-8002</module>
     </modules>
     <packaging>pom</packaging>
 
