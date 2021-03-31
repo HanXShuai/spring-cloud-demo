@@ -1,9 +1,9 @@
 server:
-  port: 80
+  port: 8005
 
 spring:
   application:
-    name: consummer-order
+    name: cloud-payment-feign-order
 
 eureka:
   client:
@@ -12,4 +12,8 @@ eureka:
     service-url:
       defaultZone: http://eureka7002.com:7002/eureka/,http://eureka7001.com:7001/eureka/
   instance:
-    instance-id: comsummer80
+    instance-id: comsummer-feign-8005
+
+logging:
+  level:
+    com.hans.cloud.feign.order.service.PaymentFeginService: debug

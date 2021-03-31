@@ -1,20 +1,22 @@
-package com.hans.cloud.order.payment02.controller;
+package com.hans.cloud.order.payment04.contrpller;
 
-import com.hans.cloud.order.payment02.service.IPaymentService;
+import com.hans.cloud.order.payment04.service.IPaymentService;
 import coom.hans.cloud.common.entities.CommonResult;
 import coom.hans.cloud.common.entities.Payment;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @Author: hans
- * @Date: 2020/9/6 14:55
+ * @Date: 2021/3/22 21:06
  */
 @RestController
-@RequestMapping("/payment")
 public class PaymentController {
 
     private Logger logger = LoggerFactory.getLogger(PaymentController.class);

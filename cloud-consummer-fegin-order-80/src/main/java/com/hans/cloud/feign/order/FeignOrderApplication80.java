@@ -1,19 +1,19 @@
-package com.hans.cloud.order;
+package com.hans.cloud.feign.order;
 
-import com.hans.cloud.myrule.MySelfRule;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
-import org.springframework.cloud.netflix.ribbon.RibbonClient;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
  * @Author: hans
- * @Date: 2020/9/6 14:41
+ * @Date: 2021/3/22 22:06
  */
 @SpringBootApplication
 @EnableEurekaClient
-public class OrderApplication80 {
+@EnableFeignClients
+public class FeignOrderApplication80 {
     public static void main(String[] args) {
-        SpringApplication.run(OrderApplication80.class, args);
+        SpringApplication.run(FeignOrderApplication80.class, args);
     }
 }

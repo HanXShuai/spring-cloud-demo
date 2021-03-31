@@ -1,18 +1,23 @@
 package com.hans.cloud.myrule;
 
-import com.netflix.loadbalancer.*;
+import com.netflix.loadbalancer.IRule;
+import com.netflix.loadbalancer.RandomRule;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
+
 
 /**
+ * 轮训算法核心 ： rest 接口第几次请求 % 服务器集群总数量 = 实际服务下标位置，
+ * 每次服务重启后服务下标从 1 开始
+ *
  * @Author: hans
  * @Date: 2021/3/14 18:45
  */
-@Configuration
-public class MySelfRule {
+@Component
+public class MySelfRule  {
 
-    @Bean
-    public IRule myRule(){
+   @Bean
+    public IRule myRule() {
         /**
          * com.netflix.loadbalancer.RoundRobinRule 轮询
          * com.netflix.loadbalancer.RandomRule 随机

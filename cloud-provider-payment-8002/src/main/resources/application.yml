@@ -5,7 +5,6 @@ spring:
   application:
     name: provider-payment
   datasource:
-    type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.jdbc.Driver
     username: root
     password: 123456
@@ -16,7 +15,9 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://localhost:7001/eureka/
+      defaultZone: http://eureka7002.com:7002/eureka/,http://eureka7001.com:7001/eureka/
+  instance:
+    instance-id: payment8002
 
 mybatis:
   mapper-locations: classpath:/mapper/mapper-*.xml
